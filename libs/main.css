@@ -12,8 +12,15 @@ h2 {
     font-weight: bolder;
 }
 
-button {
-    outline: none;
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn:hover {
+    background-color: white;
+    color: lightseagreen;
 }
 
 #header {
