@@ -1,0 +1,108 @@
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body {
+    font-size: 25px;
+}
+
+h2 {
+    color: lightseagreen;
+    font-weight: bolder;
+}
+
+button {
+    outline: none;
+}
+
+#header {
+    background-color: lightseagreen;
+    color: white;
+}
+
+#photoProfil {
+    max-height: 110px;
+    max-width: 110px;
+    border: solid 5px white;
+}
+
+#imgProfilBusinessCard {
+    height: 80px;
+    margin-right: 10px;
+}
+
+#modalBusinessCards a {
+    color: lightseagreen;
+}
+
+#headerTwo {
+    background-color: lightgrey;
+    font-size: 15px;
+    padding: 15px 0 10px 0;
+    text-align: center;
+}
+
+#headerTwo a {
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+.btnGroupMenu {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.modal-header {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.logoSize {
+   height: 30px;
+}
+
+#generalHeader {
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+#mainContainer {
+    padding-top: 250px;
+}
+
+@media all and (max-width: 1080px) {
+    #generalHeader {
+        position: static;
+    }
+    #mainContainer {
+        padding-top: 15px;
+    }
+}
+
+
+
+
+
+
+
+.back_to_top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    color: #444;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+}
+
+.back_to_top:hover {
+    color: #666;
+}
+
+.back_to_top-show {
+    display: block;
+    animation: fadein 1s;
+}
