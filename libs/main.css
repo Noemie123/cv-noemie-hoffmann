@@ -3,8 +3,10 @@
     to   { opacity: 1; }
 }
 
+/* main css */
+
 body {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 h2 {
@@ -29,14 +31,18 @@ h2 {
 }
 
 #photoProfil {
-    max-height: 110px;
-    max-width: 110px;
+    height: 80px;
+    width: 80px;
     border: solid 5px white;
 }
 
 #imgProfilBusinessCard {
-    height: 80px;
+    height: 120px;
     margin-right: 10px;
+}
+
+#modalBusinessCards {
+    z-index: 99999;
 }
 
 #modalBusinessCards a {
@@ -46,7 +52,7 @@ h2 {
 #headerTwo {
     background-color: lightgrey;
     font-size: 15px;
-    padding: 15px 0 10px 0;
+    padding: 5px 0 4px 0;
     text-align: center;
 }
 
@@ -73,26 +79,32 @@ h2 {
     top: 0;
     position: fixed;
     width: 100%;
+    z-index: 9999;
 }
 
 #mainContainer {
-    padding-top: 250px;
+    padding-top: 120px;
 }
 
 @media all and (max-width: 1080px) {
     #generalHeader {
         position: static;
     }
+    #photoProfil {
+        height: 120px;
+        width: 120px;
+    }
     #mainContainer {
         padding-top: 15px;
     }
 }
 
+.textIndent {
+    text-indent: 10%;
+}
 
 
-
-
-
+/* back to top buttons */
 
 .back_to_top {
     position: fixed;
@@ -112,4 +124,49 @@ h2 {
 .back_to_top-show {
     display: block;
     animation: fadein 1s;
+}
+
+/* projects & technos */
+.logoTechnosSize {
+    height: 100px;
+    margin: 10px 0;
+}
+
+#projectsCards .card {
+    width: 95%;
+    margin: 20px 0;
+}
+
+#projectsCards .card-img-top {
+    min-width: 200px;
+}
+
+.projectCardVideo {
+    width: 90%;
+    max-height: 500px;
+}
+
+
+
+/* Diplomas & training */
+#mainDiploForma {
+    margin: 70px 90px;
+}
+
+@media all and (max-width: 1080px) {
+    #mainDiploForma {
+        margin: 50px 10px;
+    }
+}
+
+
+/* personal information page */
+#dlCV {
+    margin-top: 10px;
+}
+
+@media all and (max-width: 1080px) {
+    #mediaCV {
+        display: none;
+    }
 }

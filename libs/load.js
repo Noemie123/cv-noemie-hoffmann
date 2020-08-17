@@ -1,23 +1,32 @@
 $(document).ready(() => {
-    $('#mainContainer').load('templates/mainTemplate.html #divInfosPerso');
+    $('#loadIntoDiv').load('templates/mainTemplate.html #divInfosPerso');
 
     $('#btnProjetsTechnos').click(() => {
-        $('#mainContainer').load('templates/mainTemplate.html #divProjetsTechnos');
+        $('#toggleMenuBtn').attr('aria-expanded', 'false');
+        $('#navbarContent').removeClass('show');
+        $('#loadIntoDiv').load('templates/mainTemplate.html #divProjetsTechnos');
         $(document).scrollTop(0);
+
     })
 
     $('#btnDiploForma').click(() => {
-        $('#mainContainer').load('templates/mainTemplate.html #divDiploForma');
+        $('#toggleMenuBtn').attr('aria-expanded', 'false');
+        $('#navbarContent').removeClass('show');
+        $('#loadIntoDiv').load('templates/mainTemplate.html #divDiploForma');
         $(document).scrollTop(0);
     })
 
     $('#btnExpComp').click(() => {
-        $('#mainContainer').load('templates/mainTemplate.html #divExpComp');
+        $('#toggleMenuBtn').attr('aria-expanded', 'false');
+        $('#navbarContent').removeClass('show');
+        $('#loadIntoDiv').load('templates/mainTemplate.html #divExpComp');
         $(document).scrollTop(0);
     })
 
     $('#btnInfosPerso').click(() => {
-        $('#mainContainer').load('templates/mainTemplate.html #divInfosPerso');
+        $('#toggleMenuBtn').attr('aria-expanded', 'false');
+        $('#navbarContent').removeClass('show');
+        $('#loadIntoDiv').load('templates/mainTemplate.html #divInfosPerso');
         $(document).scrollTop(0);
     })
 })
