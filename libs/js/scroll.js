@@ -1,5 +1,3 @@
-// Un scroll to top en Vanilla JS
-
 (function() {
     'use strict';
 
