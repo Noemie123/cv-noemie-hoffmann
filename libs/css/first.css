@@ -2,7 +2,7 @@ body, html {
     height: 100%;
     overflow-x: hidden;
 }
-  
+
 .bg {
     /* The image used */
     background-image: url("../../media/pictures/presentation-fullscreen.jpg");
@@ -27,8 +27,6 @@ body, html {
     justify-content: center;
     align-items: center;
 }
-
-
 
 a:link {
     text-decoration: none;
