@@ -30,31 +30,12 @@ body, html {
     align-items: center;
 }
 
-@media (max-width: 500px) { 
+@media all and (max-width: 1250px) { 
     #goToResumeDiv {
         text-align: center;
         top: 100px;
-        left: 20%;
-        width: 60%;
+        left: 15%;
+        width: 70%;
     }
 }
 
-a:link {
-    text-decoration: none;
-    color: black;
-  }
-  
-a:visited {
-    text-decoration: none;
-    color: black;
-}
-  
-a:hover {
-    text-decoration: none;
-    color: black;
-}
-  
-a:active {
-    text-decoration: none;
-    color: black;
-}

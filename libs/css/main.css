@@ -1,6 +1,10 @@
 .navbar {
     background-color: #26495C;
-    color: #E5E5DC
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #E5E5DC!important;
+    font-size: 25px;
 }
 
 .navbar-nav {
@@ -26,6 +30,42 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#headerDiv {
+    position: relative;
+    top: 20px;
+    left: 5%;
+    height: 310px;
+    width: 90%;    
+    background-color: #C66B3D;
+    opacity: 0.7;
+    font-size: 30px;
+    color: #E5E5DC;
+    text-align: center;
+}
+
+#headerDiv h1 {
+    color: #E5E5DC;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+@media all and (max-width: 1250px) { 
+    #headerDiv {
+        top: 100px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    #headerDiv h1 {
+        font-size: inherit;
+    }
+
+    #headerDiv p {
+        display: none;
+    }
 }
 
 #competencesDiv {
@@ -65,20 +105,20 @@ header {
 
   a:link {
     text-decoration: none;
-    color: #E5E5DC
+    color: #E5E5DC!important;
   }
   
 a:visited {
     text-decoration: none;
-    color: #E5E5DC
+    color: #E5E5DC!important;
 }
   
 a:hover {
     text-decoration: none;
-    color: #E5E5DC
+    color: #E5E5DC!important;
 }
   
 a:active {
     text-decoration: none;
-    color: #E5E5DC
+    color: #E5E5DC!important;
 }
