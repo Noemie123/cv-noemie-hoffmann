@@ -34,9 +34,6 @@ header {
     background-color: lightgray;
 }
 
-
-
-
 #goToTopBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -56,3 +53,23 @@ header {
   #goToTopBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
+
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+  
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+  
+a:active {
+    text-decoration: none;
+    color: black;
+}
