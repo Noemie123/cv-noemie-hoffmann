@@ -30,7 +30,7 @@ body, html {
     align-items: center;
 }
 
-@media all and (max-width: 1250px) { 
+@media all and (max-width: 1400px) { 
     #goToResumeDiv {
         text-align: center;
         top: 100px;

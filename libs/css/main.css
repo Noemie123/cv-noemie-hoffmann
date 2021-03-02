@@ -51,12 +51,19 @@ header {
     font-size: 70px;
 }
 
-@media all and (max-width: 1250px) { 
+#headerDiv p {
+    text-align: justify; 
+    text-indent: 50px; 
+    padding: 10px 20px;
+}
+
+@media all and (max-width: 1400px) { 
     #headerDiv {
         top: 100px;
         height: 150px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     #headerDiv h1 {
