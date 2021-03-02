@@ -3,6 +3,14 @@ body, html {
     overflow-x: hidden;
 }
 
+
+
+/**************************
+*                         *
+*       BACKGROUND        *
+*                         *
+***************************/
+
 .bg {
     /* The image used */
     background-image: url("../../media/pictures/presentation-fullscreen.jpg");
@@ -15,6 +23,14 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+/**************************
+*                         *
+*      GO TO RESUME       *
+*                         *
+***************************/
 
 #goToResumeDiv {
     position: absolute;
