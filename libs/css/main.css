@@ -1,9 +1,18 @@
+.navbar {
+    background-color: #26495C;
+    color: #E5E5DC
+}
+
 .navbar-nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
     text-align: center;
     align-items: center;
+}
+
+.nav-item {
+    cursor: pointer;
 }
 
 header {
@@ -56,20 +65,20 @@ header {
 
   a:link {
     text-decoration: none;
-    color: black;
+    color: #E5E5DC
   }
   
 a:visited {
     text-decoration: none;
-    color: black;
+    color: #E5E5DC
 }
   
 a:hover {
     text-decoration: none;
-    color: black;
+    color: #E5E5DC
 }
   
 a:active {
     text-decoration: none;
-    color: black;
+    color: #E5E5DC
 }
