@@ -178,6 +178,7 @@ body {
     background-color: #26495C; 
     color: #E5E5DC;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 #experiencesTextDiv p {
@@ -267,7 +268,7 @@ body {
   z-index: 99; 
   border: none; 
   outline: none; 
-  background-color: #26495C; 
+  background-color: #C66B3D; 
   color: #E5E5DC; 
   cursor: pointer; 
   padding: 15px; 
@@ -277,7 +278,7 @@ body {
   
 #goToTopBtn:hover {
   background-color: #E5E5DC; 
-  color: #26495C;
+  color: #C66B3D;
 }
 
 a:link {
