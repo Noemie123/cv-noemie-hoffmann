@@ -129,7 +129,7 @@ body {
     .col-reverse {
         flex-direction: column-reverse;
     }
-    
+
     .homepagePresentationDiv {
         padding: 5px;
     }
@@ -237,9 +237,10 @@ body {
 
 @media all and (max-width: 1400px) { 
     #profileLeftDiv {
-        flex-direction: column;
+        justify-content: center;
         width: inherit;
         height: inherit;
+        margin-bottom: 15px;
     }
 
     #profileRightDiv {
