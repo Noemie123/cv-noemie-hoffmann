@@ -98,6 +98,7 @@ header {
 h2 {
     color: #26495C;
     font-size: 45px;
+    text-decoration: underline;
 }
 
 body {
@@ -122,6 +123,10 @@ body {
 }
 
 @media all and (max-width: 1400px) { 
+    h2 {
+        font-size: 40px;
+    }
+
     .col-not-reverse {
         flex-direction: column;
     }
