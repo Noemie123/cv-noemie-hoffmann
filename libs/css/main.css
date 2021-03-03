@@ -115,6 +115,26 @@ body {
     margin-bottom: 40px;
 }
 
+#genDivFlex {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+@media all and (max-width: 1400px) { 
+    .col-not-reverse {
+        flex-direction: column;
+    }
+
+    .col-reverse {
+        flex-direction: column-reverse;
+    }
+    
+    .homepagePresentationDiv {
+        padding: 5px;
+    }
+}
+
 
 /**************************
 *                         *
@@ -135,11 +155,47 @@ body {
 ***************************/
 
 #experiencesDiv {
-    height: 900px; 
     background-color: #C66B3D;
 }
 
+#experiencesTitleDiv {
+    width: 570px; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
 
+#experiencesTitleDiv img {
+    width: 100%;
+}
+
+#experiencesTextDiv {
+    width: 860px;
+    padding: 15px;
+    background-color: #26495C; 
+    color: #E5E5DC;
+    margin-bottom: 15px;
+}
+
+#experiencesTextDiv p {
+    text-align: justify;
+    text-indent: 60px;
+}
+
+@media all and (max-width: 1400px) {
+    #experiencesTitleDiv {
+        width: inherit;
+        text-align: center;
+    }
+
+    #experiencesTextDiv {
+        width: inherit;
+        text-align: center;
+    }
+}
 
 /**************************
 *                         *
@@ -149,11 +205,6 @@ body {
 
 #personalDiv {
     background-color: #E5E5DC;
-}
-
-#topFlex {
-    display: flex;
-    justify-content: space-around;
 }
 
 #profileLeftDiv {
@@ -185,10 +236,6 @@ body {
 }
 
 @media all and (max-width: 1400px) { 
-    #topFlex {
-        flex-direction: column;
-    }
-
     #profileLeftDiv {
         flex-direction: column;
         width: inherit;
