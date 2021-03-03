@@ -236,9 +236,14 @@ body {
     margin: 50px 270px;
 }
 
+#profileCarousel {
+    margin-bottom: 15px;
+}
+
 @media all and (max-width: 1400px) { 
     #profileLeftDiv {
         justify-content: center;
+        flex-direction: column;
         width: inherit;
         height: inherit;
         margin-bottom: 15px;
@@ -252,6 +257,10 @@ body {
     #profileBottomDiv {
         margin: 20px 5px;
     }
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+    background-color: #E5E5DC!important;
 }
 
 /**************************
