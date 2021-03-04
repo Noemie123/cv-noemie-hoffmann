@@ -71,7 +71,8 @@ header {
     padding: 10px 20px;
 }
 
-@media all and (max-width: 1400px) { 
+/* width inferior to large tablet styles */
+@media all and (max-width: 991px) { 
     #headerDiv {
         top: 100px;
         height: 150px;
@@ -122,9 +123,10 @@ body {
     padding: 15px 0;
 }
 
-@media all and (max-width: 1400px) { 
+/* width inferior to large tablet styles */
+@media all and (max-width: 991px) { 
     h2 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .col-not-reverse {
@@ -148,10 +150,38 @@ body {
 ***************************/
 
 #competencesDiv {
-    height: 900px; 
     background-color: #E5E5DC;
 }
 
+
+.formationsDiv {
+    width: 18%;
+    border: solid 1px #C66B3D;
+    display: flex;
+    justify-content: center;
+}
+
+.formationsDiv .card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cardHeight {
+    height: 290px;
+}
+
+.heightMin {
+    min-height: 290px;
+}
+
+@media all and (max-width: 991px) {
+    .formationsDiv {
+        width: 95%;
+        margin: 10px auto;
+    }
+}
 
 /**************************
 *                         *
@@ -191,7 +221,7 @@ body {
     text-indent: 60px;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 991px) {
     #experiencesTitleDiv {
         width: inherit;
         text-align: center;
@@ -244,7 +274,8 @@ body {
     margin-bottom: 15px;
 }
 
-@media all and (max-width: 1400px) { 
+/* width inferior to large tablet styles */
+@media all and (max-width: 991px) { 
     #profileLeftDiv {
         justify-content: center;
         flex-direction: column;

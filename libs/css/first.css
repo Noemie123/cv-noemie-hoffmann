@@ -46,7 +46,8 @@ body, html {
     align-items: center;
 }
 
-@media all and (max-width: 1400px) { 
+/* width inferior to large tablet styles */
+@media all and (max-width: 991px) { 
     #goToResumeDiv {
         text-align: center;
         top: 100px;
