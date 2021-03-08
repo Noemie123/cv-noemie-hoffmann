@@ -90,6 +90,21 @@ header {
     }
 }
 
+/* cards when medium size window */
+@media all and (min-width: 991px) and (max-width: 1400px) {
+    #headerDiv {
+        top: 100px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #headerDiv p {
+        display: none;
+    }
+}
+
 /**************************
 *                         *
 *        GENERAL          *
@@ -121,6 +136,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 15px 0;
+    flex-wrap: wrap;
 }
 
 /* width inferior to large tablet styles */
@@ -143,14 +159,29 @@ body {
 }
 
 
+
+
 /**************************
 *                         *
 *       COMPETENCES       *
 *                         *
 ***************************/
 
-#competencesDiv {
+#competencesTrainingsDiv {
     background-color: #E5E5DC;
+}
+
+#avatarImage {
+    height: 300px;
+    border-radius: 50%;
+    border: solid 10px #26495C;
+}
+
+.competencesDiv {
+    width: 30%;
+    height: 300px;
+    margin-bottom: 25px;
+    border: solid 1px black;
 }
 
 
@@ -196,6 +227,15 @@ body {
 }
 
 @media all and (max-width: 991px) {
+    #avatarImage {
+        display: none;
+    }
+
+    .competencesDiv {
+        width: 100%;
+        height: auto;
+    }
+
     .formationsDiv {
         width: 95%;
         margin: 10px auto;
@@ -213,6 +253,15 @@ body {
 
 /* cards when medium size window */
 @media all and (min-width: 991px) and (max-width: 1400px) {
+    #avatarImage {
+        display: none;
+    }
+
+    .competencesDiv {
+        width: 45%;
+        height: auto;
+    }
+
     .cardHeight {
         height: 360px;
     }
@@ -222,6 +271,8 @@ body {
     }
 
 }
+
+
 
 /**************************
 *                         *
@@ -256,6 +307,10 @@ body {
     text-align: center;
 }
 
+#experiencesTextDiv h3 {
+    color: #C66B3D;
+}
+
 #experiencesTextDiv p {
     text-align: justify;
     text-indent: 60px;
@@ -272,6 +327,7 @@ body {
         text-align: center;
     }
 }
+
 
 /**************************
 *                         *

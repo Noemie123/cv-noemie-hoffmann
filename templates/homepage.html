@@ -18,7 +18,7 @@
 
 <body>
     <!-- General navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-xl navbar-light">
         <a class="navbar-brand" href="../index.html"> <img src="../media/logos/logo.png" alt="Noémie Hoffmann"
                 style="height: 70px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -32,7 +32,7 @@
                     <a class="nav-link" href="Homepage.html">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" onclick="smoothScroll(document.getElementById('competencesDiv'))">Compétences &
+                    <a class="nav-link" onclick="smoothScroll(document.getElementById('competencesTrainingsDiv'))">Compétences &
                         Formations</a>
                 </li>
                 <li class="nav-item">
@@ -57,21 +57,38 @@
         <div id="headerDiv">
             <h1>Chargée de projet web / digital</h1>
             <p>Passionnée par la communication dans son ensemble et avec une aisance aussi bien dans le numérique qu’en
-                langues étrangère, je souhaite désormais trouver un emploi en tant que chargée de projet digital. Forte
+                langues étrangères, je souhaite désormais trouver un emploi en tant que chargée de projet digital. Forte
                 d’expériences diverses, je suis prête à m’investir à fond dans un projet en mettant à votre disposition
                 ma méthodologie, mon sérieux et ma créativité. </p>
         </div>
     </header>
 
-    <!-- info message -->
-    <div class="text-center py-3">
-        Contactez-moi par mail @ noemie.hof94@gmail.com
+    <!-- informative message -->
+    <div class="d-flex flex-column text-center pt-3">
+        <p>OPEN TO WORK à partir de juillet</p>
+        <p>Contact par mail @ noemie.hof94@gmail.com</p>
     </div>
 
-    <!-- competences -->
-    <div id="competencesDiv" class="homepagePresentationDiv">
+    <!-- competences & trainings -->
+    <div id="competencesTrainingsDiv" class="homepagePresentationDiv">
         <div class="divTitles">
             <h2>Compétences & Formations</h2>
+        </div>
+
+
+        <!-- competences -->
+        <div id="genDivFlex" class="col-not-reverse">
+            <div class="competencesDiv">
+                Informatique
+            </div>
+            <img id="avatarImage" src="../media/avatar-me.png" alt="Avatar moi">
+            <div class="competencesDiv">
+                Communication
+            </div>
+            <div class="competencesDiv">
+                intérêts et valeurs
+            </div>
+
         </div>
 
         <!-- trainings -->
@@ -101,10 +118,11 @@
                         <div class="petitPlus">
                             Le + :
                             <p>
-                            Pouvoir voir un peu plus en détail la partie conception d’un projet avec création de
-                            MCD, MLD etc., pouvoir profiter du travail en groupe pour aller plus loin encore, pouvoir
-                            travailler sur des projets différents et découvrir de nouvelles technos.
-                        </p>
+                                Pouvoir voir un peu plus en détail la partie conception d’un projet avec création de
+                                MCD, MLD etc., pouvoir profiter du travail en groupe pour aller plus loin encore,
+                                pouvoir
+                                travailler sur des projets différents et découvrir de nouvelles technos.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -126,15 +144,18 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#cardTwo">
                     <div class="card-body">
                         <p class="voirPlus">
-                            Formation diplômante (bac + 2). Algorithmie et logique, apprentissage de différents langages (HTML, JS, PHP…) et utilisation de frameworks, intérêt particulier porté au responsive design pour le front et à la sécurité pour le back.
-                            
+                            Formation diplômante (bac + 2). Algorithmie et logique, apprentissage de différents langages
+                            (HTML, JS, PHP…) et utilisation de frameworks, intérêt particulier porté au responsive
+                            design pour le front et à la sécurité pour le back.
+
                         </p>
                         <div class="petitPlus">
                             Le + :
                             <p>
-                            Pouvoir travailler sur différents projets en solo ou en groupe, formation plutôt complète de l’algorithmie jusqu’à la réalisation complète d’une application (front/back)
-                        
-                        </p>
+                                Pouvoir travailler sur différents projets en solo ou en groupe, formation plutôt
+                                complète de l’algorithmie jusqu’à la réalisation complète d’une application (front/back)
+
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -156,15 +177,19 @@
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#cardThree">
                     <div class="card-body">
                         <p class="voirPlus">
-                            Formation courte (3 mois) et non diplômante mais qui m’a permis de découvrir un peu plus les métiers du numériques et m’a aidé à faire mon choix en conséquence. Trois grands pôles étudiés : Développement, TAI & Graphisme.
-                            
+                            Formation courte (3 mois) et non diplômante mais qui m’a permis de découvrir un peu plus les
+                            métiers du numériques et m’a aidé à faire mon choix en conséquence. Trois grands pôles
+                            étudiés : Développement, TAI & Graphisme.
+
                         </p>
                         <div class="petitPlus">
                             Le + :
                             <p>
-                            Une assez grande liberté dans sa manière d’apprendre, activités variées, conseils avisés et aspect « touche à tout » très agréable pour vraiment permettre de découvrir différents métiers et leurs tâches respectives de façon plus concrète.
-                        
-                        </p>
+                                Une assez grande liberté dans sa manière d’apprendre, activités variées, conseils avisés
+                                et aspect « touche à tout » très agréable pour vraiment permettre de découvrir
+                                différents métiers et leurs tâches respectives de façon plus concrète.
+
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -186,17 +211,21 @@
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#cardFour">
                     <div class="card-body">
                         <p class="voirPlus">
-                            Pour les langues : Anglais & Espagnol au même niveau. Cours de traduction (thème/version), pratique à l’oral, 
-                            Pour la partie technologie : cours d’informatique, utilisation de différents programmes (Suite office, InDesign…), culture générale / culture scientifique et technologique
+                            Pour les langues : Anglais & Espagnol au même niveau. Cours de traduction (thème/version),
+                            pratique à l’oral,
+                            Pour la partie technologie : cours d’informatique, utilisation de différents programmes
+                            (Suite office, InDesign…), culture générale / culture scientifique et technologique
                             Cours de communication interculturelle et internationale des entreprises.
-                            
+
                         </p>
                         <div class="petitPlus">
                             Le + :
                             <p>
-                            Pouvoir renouer avec l’espagnol que je n’avais pas étudié pendant ma licence et perfectionnement en anglais, apport culturel sur la technologie dans son ensemble et sensibilisation à la communication internationale. 
-                        
-                        </p>
+                                Pouvoir renouer avec l’espagnol que je n’avais pas étudié pendant ma licence et
+                                perfectionnement en anglais, apport culturel sur la technologie dans son ensemble et
+                                sensibilisation à la communication internationale.
+
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -218,14 +247,17 @@
                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#cardFive">
                     <div class="card-body">
                         <p class="voirPlus">
-                            Focus sur l’anglais et la culture anglaise. Quasi-totalité des cours dispensés en anglais : histoire (UK/US), littérature (UK/US), traduction (thème/version). Cours de communication, phonétique anglais, théâtre…
-                            
+                            Focus sur l’anglais et la culture anglaise. Quasi-totalité des cours dispensés en anglais :
+                            histoire (UK/US), littérature (UK/US), traduction (thème/version). Cours de communication,
+                            phonétique anglais, théâtre…
+
                         </p>
                         <div class="petitPlus">
                             Le + :
                             <p>
-                                Cette formation m’a permis d’être encore plus à l’aise avec l’anglais, de me perfectionner, d’en apprendre plus sur la culture anglaise en général.
-                            </p> 
+                                Cette formation m’a permis d’être encore plus à l’aise avec l’anglais, de me
+                                perfectionner, d’en apprendre plus sur la culture anglaise en général.
+                            </p>
                         </div>
                     </div>
                 </div>
