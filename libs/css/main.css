@@ -171,19 +171,42 @@ body {
     background-color: #E5E5DC;
 }
 
-#avatarImage {
+#avatarImage, #avatarImageResp {
     height: 300px;
     border-radius: 50%;
     border: solid 10px #26495C;
 }
 
-.competencesDiv {
-    width: 30%;
-    height: 300px;
-    margin-bottom: 25px;
-    border: solid 1px black;
+#avatarImageResp {
+    display: none;
 }
 
+.competencesDiv {
+    width: 30%;
+    min-height: 300px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.competencesDiv h3 {
+    color: #C66B3D;
+    text-decoration: underline;
+}
+
+.itDesktop, .itDesktop div {
+    display: block;
+    text-align: center;
+}
+
+.itDesktop img {
+    margin: 10px;
+    height: 50px;
+}
+
+.itResp {
+    display: none;
+    padding: 40px;
+}
 
 .formationsDiv {
     width: 18%;
@@ -200,11 +223,11 @@ body {
 }
 
 .cardHeight {
-    height: 290px;
+    height: 350px;
 }
 
 .heightMin {
-    min-height: 290px;
+    min-height: 350px;
 }
 
 .voirPlus {
@@ -231,9 +254,21 @@ body {
         display: none;
     }
 
+    #avatarImageResp {
+        display: block;
+    }
+
     .competencesDiv {
         width: 100%;
         height: auto;
+    }
+
+    .itDesktop {
+        display: none;
+    }
+
+    .itResp {
+        display: block;
     }
 
     .formationsDiv {
@@ -242,11 +277,11 @@ body {
     }
 
     .cardHeight {
-        height: 290px;
+        height: 410px;
     }
 
     .heightMin {
-        min-height: 290px;
+        min-height: 410px;
     }
 
 }
@@ -257,9 +292,17 @@ body {
         display: none;
     }
 
+    #avatarImageResp {
+        display: block;
+    }
+
     .competencesDiv {
         width: 45%;
         height: auto;
+    }
+
+    .itDesktop {
+        display: none;
     }
 
     .cardHeight {
