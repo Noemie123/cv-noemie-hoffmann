@@ -132,7 +132,7 @@ body {
     margin-bottom: 40px;
 }
 
-#genDivFlex {
+.genDivFlex {
     display: flex;
     justify-content: space-around;
     padding: 15px 0;
@@ -230,24 +230,18 @@ body {
     min-height: 350px;
 }
 
-.voirPlus {
-    text-indent: 2em;
-    text-align: justify;
-}
-
 .petitPlus {
     background-color: #C66B3D;
-    padding: 10px 25px;
+    padding: 10px 15px;
     color: white;
 }
 
-.petitPlus {
-    text-align: center;
+.voirPlus p, .petitPlus p {
+    text-align: justify;
+    font-size: 16px;
 }
 
-.petitPlus p {
-    text-align: justify;
-}
+
 
 @media all and (max-width: 991px) {
     #avatarImage {
