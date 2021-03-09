@@ -321,7 +321,7 @@ body {
     background-color: #C66B3D;
 }
 
-#experiencesTitleDiv {
+.experiencesTitleDiv {
     width: 570px; 
     padding: 10px;
     display: flex;
@@ -331,11 +331,11 @@ body {
     margin-bottom: 15px;
 }
 
-#experiencesTitleDiv img {
+.experiencesTitleDiv img {
     width: 100%;
 }
 
-#experiencesTextDiv {
+.experiencesTextDiv {
     width: 860px;
     padding: 15px;
     background-color: #26495C; 
@@ -344,22 +344,22 @@ body {
     text-align: center;
 }
 
-#experiencesTextDiv h3 {
+.experiencesTextDiv h3 {
     color: #C66B3D;
 }
 
-#experiencesTextDiv p {
+.experiencesTextDiv p {
     text-align: justify;
     text-indent: 60px;
 }
 
 @media all and (max-width: 991px) {
-    #experiencesTitleDiv {
+    .experiencesTitleDiv {
         width: inherit;
         text-align: center;
     }
 
-    #experiencesTextDiv {
+    .experiencesTextDiv {
         width: inherit;
         text-align: center;
     }
