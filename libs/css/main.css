@@ -193,6 +193,10 @@ body {
     text-decoration: underline;
 }
 
+.itDesktop {
+    height: 570px;
+}
+
 .itDesktop, .itDesktop div {
     display: block;
     text-align: center;
@@ -201,6 +205,15 @@ body {
 .itDesktop img {
     margin: 10px;
     height: 50px;
+    width: 50px;
+}
+
+.itDesktop .logoTexts {
+    font-size: 14px;
+    display: none;
+    background-color: #26495C;
+    padding: 5px;
+    color: white;
 }
 
 .itResp {
