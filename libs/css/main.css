@@ -163,9 +163,14 @@ body {
 
 /**************************
 *                         *
-*       COMPETENCES       *
+*    COMP. & TRAININGS    *
 *                         *
 ***************************/
+
+/*
+* COMPETENCES
+*/
+
 
 #competencesTrainingsDiv {
     background-color: #E5E5DC;
@@ -224,6 +229,21 @@ body {
     padding: 40px;
 }
 
+#interestsValuesDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+#interestsValuesDiv p {
+    margin: 15px;
+}
+
+/*
+* TRAININGS
+*/
+
 .formationsDiv {
     width: 18%;
     border: solid 1px #C66B3D;
@@ -260,6 +280,10 @@ body {
 
 
 @media all and (max-width: 991px) {
+    /*
+    * COMPETENCES
+    */
+    
     #avatarImage {
         display: none;
     }
@@ -281,6 +305,19 @@ body {
         display: block;
     }
 
+    #interestsValuesDiv {
+        flex-direction: column;
+    }
+
+    #interestsValuesDiv p {
+        margin: 5px;
+    }
+
+
+    /*
+    * TRAININGS
+    */
+
     .formationsDiv {
         width: 95%;
         margin: 10px auto;
@@ -298,6 +335,10 @@ body {
 
 /* cards when medium size window */
 @media all and (min-width: 991px) and (max-width: 1400px) {
+    /*
+    * COMPETENCES
+    */
+    
     #avatarImage {
         display: none;
     }
@@ -318,6 +359,11 @@ body {
     .itResp {
         display: block;
     }
+
+    
+    /*
+    * TRAININGS
+    */
 
     .cardHeight {
         height: 360px;
