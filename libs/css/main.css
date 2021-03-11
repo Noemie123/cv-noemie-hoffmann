@@ -229,6 +229,8 @@ body {
     padding: 40px;
 }
 
+
+
 #interestsValuesDiv {
     display: flex;
     flex-wrap: wrap;
@@ -305,6 +307,14 @@ body {
         display: block;
     }
 
+    .itResp li {
+        margin: 10px 2px!important;
+    }
+
+    #communicationDiv div p {
+        margin: 10px 2px!important;
+    }
+
     #interestsValuesDiv {
         flex-direction: column;
     }
@@ -358,6 +368,14 @@ body {
 
     .itResp {
         display: block;
+    }
+
+    .itResp li {
+        margin: 10px 2px!important;
+    }
+
+    #communicationDiv div p {
+        margin: 10px 2px!important;
     }
 
     
