@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../libs/css/main.css">
 
-    <link rel="icon" type="image/png" href="../media/profil.jpg" />
+    <link rel="icon" type="image/png" href="../media/logos/logo.png" />
 
 </head>
 
@@ -28,9 +28,6 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="Homepage.html">Accueil</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link"
                         onclick="smoothScroll(document.getElementById('competencesTrainingsDiv'))">Compétences &
@@ -65,9 +62,16 @@
     </header>
 
     <!-- informative message -->
-    <div class="d-flex flex-column text-center pt-3">
+    <div class="d-flex flex-column align-items-center text-center pt-3">
         <p>OPEN TO WORK à partir de juillet 2021 !</p>
-        <p>Contact par mail @ noemie.hof94@gmail.com</p>
+        <div class="d-flex flex-column flex-md-row">
+            <p>Contact par mail :</p>
+            <p id="mailClick" class="mx-2">noemie.hof94@gmail.com</p>
+            <p>
+            <i id="mailClickSign" class="fa fa-check d-none" style="color: #C66B3D;"></i>
+        </p>
+        </div>
+        <p id="mailClickMessage" class="d-none" style="background-color: #C66B3D; color:white; padding: 2px 5px;"></p>
         <a href="https://www.linkedin.com/in/noemie-hoffmann-nh123/" target="_blank"><img style="width: 100px;"
                 class="pb-3" src="../media/logos/logo-linkedin-line.png" alt="linkedIn logo"></a>
     </div>
@@ -87,7 +91,7 @@
             <div class="competencesDiv">
                 <h3>Informatique</h3>
 
-                <div class="text-justify mt-3">
+                <div id="itDiv" class="text-justify mt-3">
                     <ul class="itResp">
                         <li><b>Langages Dev</b> : HTML5, CSS3, JS, PHP, JAVA</li>
                         <li><b>Frameworks</b> : ReactJS, Symfony, SpringBoot</li>
@@ -288,7 +292,7 @@
                     </div>
                 </div>
             </div>
-            <div class="competencesDiv">
+            <div class="competencesDiv" style="width: 42%;">
                 <h3>Intérêts et valeurs</h3>
                 <div id="interestsValuesDiv">
                     <p class="font-weight-bold">esprit d'équipe</p>
@@ -690,6 +694,7 @@
     <script src="../libs/js/scroll.js"></script>
     <script src="../libs/js/togglingCards.js"></script>
     <script src="../libs/js/hoverNamesTechnos.js"></script>
+    <script src="../libs/js/copyEmail.js"></script>
 </body>
 
 </html>

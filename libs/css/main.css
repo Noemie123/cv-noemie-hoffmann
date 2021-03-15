@@ -314,7 +314,7 @@ body {
     }
 
     .competencesDiv {
-        width: 100%;
+        width: 100%!important;
         height: auto;
     }
 
@@ -567,10 +567,12 @@ body {
   padding: 15px; 
   border-radius: 15px; 
   font-size: 18px; 
+  border: solid 1px #E5E5DC;
 }
   
 #goToTopBtn:hover {
   background-color: #E5E5DC; 
+  border: solid 1px #C66B3D;
   color: #C66B3D;
 }
 
