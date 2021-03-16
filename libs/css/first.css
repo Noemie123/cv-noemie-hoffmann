@@ -35,9 +35,9 @@ body, html {
 #goToResumeDiv {
     position: absolute;
     top: 400px;
-    left: 35%;
+    left: 30%;
     height: 150px;
-    width: 30%;
+    width: 40%;
     background-color: #C66B3D;
     color: #E5E5DC;
     opacity: 0.8;
