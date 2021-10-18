@@ -38,7 +38,7 @@ header {
     background-image: url("../../media/pictures/presentation.jpg");
 
     /* Full height */
-    height: 370px;
+    height: 470px;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -50,7 +50,7 @@ header {
     position: relative;
     top: 20px;
     left: 5%;
-    height: 330px;
+    height: 430px;
     width: 90%;
     background-color: #f2AB27;
     font-size: 30px;
