@@ -1,5 +1,5 @@
 $('#mailClick').mouseover(() => {
-    $('#mailClickMessage').text("Cliquez pour copier mon email !");
+    $('#mailClickMessage').text("Cliquez sur mon adresse email pour la copier !");
     $('#mailClickMessage').removeClass('d-none');
     $('#mailClickSign').addClass('d-none');
 })

@@ -8,7 +8,7 @@
     <title>CV Noémie Hoffmann</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../libs/css/main.css">
 
@@ -17,700 +17,727 @@
 </head>
 
 <body>
-    <!-- General navbar -->
-    <nav class="navbar navbar-expand-xl navbar-light">
-        <a class="navbar-brand" href="../index.html"> <img src="../media/logos/logo.png" alt="Logo Noémie Hoffmann"
-                style="height: 70px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+<!-- General navbar -->
+<nav class="navbar navbar-expand-xl navbar-light">
+    <a class="navbar-brand" href="../index.html"> <img src="../media/logos/logo.png" alt="Logo Noémie Hoffmann"
+                                                       style="height: 70px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link"
-                        onclick="smoothScroll(document.getElementById('competencesTrainingsDiv'))">Compétences &
-                        Formations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="smoothScroll(document.getElementById('experiencesDiv'))">Expériences
-                        pro</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="smoothScroll(document.getElementById('personalDiv'))">Infos persos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../media/pdf/CV-Noemie-Hoffmann.pdf" target="_blank">
-                        <i class="fa fa-arrow-down"></i>
-                        <h5>Mon-CV.pdf</h5>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link"
+                   onclick="smoothScroll(document.getElementById('competencesDiv'))">Compétences</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   onclick="smoothScroll(document.getElementById('trainingsDiv'))">Formations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="smoothScroll(document.getElementById('experiencesDiv'))">Expériences
+                    pro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="smoothScroll(document.getElementById('achievementsDiv'))">Mes réalisations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="smoothScroll(document.getElementById('personalDiv'))">Infos persos</a>
+            </li>
+            <li class="nav-item">
+                <a href="../media/pdf/CV-Noemie-Hoffmann.pdf" target="_blank">
+                    <i class="fa fa-arrow-down"></i>
+                    <h5>Mon-CV.pdf</h5>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- header with background -->
-    <header>
-        <div id="headerDiv">
-            <h1>Chargée de projet digital</h1>
-            <p>Passionnée par la communication dans son ensemble et avec une aisance aussi bien dans le numérique qu’en
-                langues étrangères, je souhaite désormais trouver un emploi en tant que chargée de projet digital. Forte
-                d’expériences diverses, je suis prête à m’investir à fond dans un projet en mettant à votre disposition
-                ma méthodologie, mon sérieux et ma créativité. </p>
-        </div>
-    </header>
+<!-- header with background -->
+<header>
+    <div id="headerDiv">
+        <h1>Chargée de communication numérique</h1>
+        <h3>Création de contenu multimédia, communication interne et externe, gestion réseaux sociaux...</h3>
+        <p>Passionnée par l'univers du numérique depuis toujours, je souhaite trouver un emploi dans le domaine de la communication numérique notamment dans la création & réalisation multimédia. Curieuse, organisée et poussée par mon envie d'apprendre et mon désir de m'épanouir, je m'engage auprès de vous pour mettre à profit ma créativité et mes connaissances acquises lors de formations et expériences professionnelles diverses.</p>
+    </div>
+</header>
 
-    <!-- informative message -->
-    <div class="d-flex flex-column align-items-center text-center pt-3">
-        <p>OPEN TO WORK à partir de juillet 2021 !</p>
-        <div class="d-flex flex-column flex-md-row">
-            <p>Contact par mail :</p>
-            <p id="mailClick" class="mx-2">noemie.hof94@gmail.com</p>
-            <p>
-                <i id="mailClickSign" class="fa fa-check d-none" style="color: #C66B3D;"></i>
-            </p>
-        </div>
-        <p id="mailClickMessage" class="d-none" style="background-color: #C66B3D; color:white; padding: 2px 5px;"></p>
-        <a href="https://www.linkedin.com/in/noemie-hoffmann-nh123/" target="_blank"><img style="width: 100px;"
-                class="pb-3" src="../media/logos/logo-linkedin-line.png" alt="linkedIn logo"></a>
+<!-- informative message -->
+<div id="messageBoxDiv" class="d-flex flex-column align-items-center text-center pt-3">
+    <p>OPEN TO WORK!</p>
+    <div class="d-flex flex-column flex-md-row">
+        <p>Contact par mail :</p>
+        <p id="mailClick" class="mx-2">noemie.hof94@gmail.com</p>
+        <p>
+            <i id="mailClickSign" class="fa fa-check d-none" style="color: #F2AB27;"></i>
+        </p>
+    </div>
+    <p id="mailClickMessage" class="d-none" style="background-color: #F2AB27; color:white; padding: 2px 5px;"></p>
+    <a href="https://www.linkedin.com/in/noemie-hoffmann-nh123/" target="_blank"><img style="width: 100px;"
+                                                                                      class="pb-3" src="../media/logos/logo-linkedin-line.png" alt="linkedIn logo"></a>
+</div>
+
+<!-- competences -->
+<div id="competencesDiv" class="homepagePresentationDiv">
+    <div class="divTitles">
+        <h2>Compétences</h2>
     </div>
 
-    <!-- competences & trainings -->
-    <div id="competencesTrainingsDiv" class="homepagePresentationDiv">
-        <div class="divTitles">
-            <h2>Compétences & Formations</h2>
+    <!-- competences -->
+    <div class="genDivFlex col-not-reverse">
+        <div class="competencesDiv">
+            <h3>Communication</h3>
+            <div id="communicationDiv" class="mt-5 px-3 text-left">
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
+                    <p class="ml-2 my-4">Conception de supports de communication</p>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
+                    <p class="ml-2 my-4">Création de contenus multimédia (image/video)</p>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
+                    <p class="ml-2 my-4">Suivi de plan de communication et de charte graphique</p>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
+                    <p class="ml-2 my-4">Qualité rédactionnelle online & offline (orthographe, français/anglais)</p>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
+                    <p class="ml-2 my-4">Utilisation de logiciels de retouche photo et de montage vidéo</p>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
+                    <p class="ml-2 my-4">Création de sites web (conception et développement)</p>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
+                    <p class="ml-2 my-4">Gestion évènementielle et adaptation à différents publics</p>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <img id="avatarImageResp" class="mx-auto mb-3" src="../media/avatar-moi.png" alt="Avatar moi">
+        <div class="d-flex align-items-center">
+            <img id="avatarImage" src="../media/avatar-moi.png" onmouseenter="this.src='../media/avatar-moi-wink.png'" onmouseleave="this.src='../media/avatar-moi.png'" class="mb-5" alt="Avatar moi">
         </div>
+        <div class="competencesDiv">
+            <h3>Numérique</h3>
 
-        <!-- competences -->
-        <div class="genDivFlex col-not-reverse">
-            <div class="competencesDiv">
-                <h3>Informatique</h3>
+            <div id="itDiv" class="text-justify mt-3">
+                <ul class="itResp">
+                    <li><b>Photo & vidéo</b> : GIMP, Powerlink Director, InDesign</li>
+                    <li><b>Bureautique</b> : Pack Office</li>
+                    <li><b>Langages Dev</b> : HTML5, CSS3, JS, PHP</li>
+                    <li><b>Frameworks</b> : Symfony, ReactJS</li>
+                    <li><b>IDE</b> : IntelliJ, PHPStorm, Webstorm</li>
+                    <li><b>Bases de données</b> : MySQL, PostgreSQL, MongoDB</li>
+                    <li><b>Conception</b> : Méthodologie AGILE & SCRUM, maquettage, cahier des charges, MCD</li>
+                </ul>
 
-                <div id="itDiv" class="text-justify mt-3">
-                    <ul class="itResp">
-                        <li><b>Langages Dev</b> : HTML5, CSS3, JS, PHP, JAVA</li>
-                        <li><b>Frameworks</b> : ReactJS, Symfony, SpringBoot</li>
-                        <li><b>IDE</b> : IntelliJ, PHPStorm, Webstorm, Visual Studio Code</li>
-                        <li><b>Bases de données</b> : MySQL, PostgreSQL, MongoDB</li>
-                        <li><b>Bureautique & Graphisme</b> : Pack Office, GIMP, Powerlink Director, InDesign</li>
-                        <li><b>Conception</b> : Méthodologie AGILE & SCRUM, maquettage, cahier des charges, MCD</li>
-                    </ul>
-
-                    <div class="itDesktop">
-                        <b>Technos :</b>
-
-                        <div class="d-flex flex-row flex-wrap justify-content-center">
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-html.png" alt="Logo HTML" class="itLogos" id="logoHtml">
-                                <p class="logoTexts" id="logoText0"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-css.png" alt="Logo CSS" class="itLogos" id="logoCss">
-                                <p class="logoTexts" id="logoText1"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-js.png" alt="Logo Javascript" class="itLogos" id="logoJs">
-                                <p class="logoTexts" id="logoText2"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-php.png" alt="Logo PHP" class="itLogos" id="logoPhp">
-                                <p class="logoTexts" id="logoText3"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-java.jpg" alt="Logo JAVA" class="itLogos" id="logoJava">
-                                <p class="logoTexts" id="logoText4"></p>
-                            </div>
+                <div class="itDesktop">
+                    <b>Photo & Video</b>
+                    <div class="d-flex flex-row flex-wrap justify-content-center mb-3">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-gimp.png" alt="Logo GIMP" class="itLogos" id="logoGimp">
+                            <p class="logoTexts" id="logoText0"></p>
                         </div>
 
-                        <div class="d-flex flex-row flex-wrap justify-content-center">
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-reactjs.png" alt="Logo ReactJS" class="itLogos"
-                                    id="logoReactJs">
-                                <p class="logoTexts" id="logoText5"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-symfony.jpg" alt="Logo Symfony" class="itLogos"
-                                    id="logoSymfony">
-                                <p class="logoTexts" id="logoText6"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-springboot.png" alt="Logo SpringBoot" class="itLogos"
-                                    id="logoSpringboot">
-                                <p class="logoTexts" id="logoText7"></p>
-                            </div>
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-powerlinkdirector.jpeg" alt="Logo Powerlink Director"
+                                 class="itLogos" id="logoPld">
+                            <p class="logoTexts" id="logoText1"></p>
                         </div>
 
-                        <div class="d-flex flex-row flex-wrap justify-content-center">
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-intellij.png" alt="Logo IntelliJ" class="itLogos"
-                                    id="logoIntellij">
-                                <p class="logoTexts" id="logoText8"></p>
-                            </div>
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-indesign.jpg" alt="Logo InDesign" class="itLogos"
+                                 id="logoInDesign">
+                            <p class="logoTexts" id="logoText2"></p>
+                        </div>
+                    </div>
 
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-phpstorm.png" alt="Logo PHPStorm" class="itLogos"
-                                    id="logoPhpstorm">
-                                <p class="logoTexts" id="logoText9"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-webstorm.png" alt="Logo Webstorm" class="itLogos"
-                                    id="logoWebstorm">
-                                <p class="logoTexts" id="logoText10"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-visualstudiocode.png" alt="Logo Visual Studio Code"
-                                    class="itLogos" id="logoVsc">
-                                <p class="logoTexts" id="logoText11"></p>
-                            </div>
+                    <b>Bureautique</b>
+                    <div class="d-flex flex-row flex-wrap justify-content-center mb-3">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-word.png" alt="Logo Word" class="itLogos" id="logoWord">
+                            <p class="logoTexts" id="logoText3"></p>
                         </div>
 
-                        <div class="d-flex flex-row flex-wrap justify-content-center">
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-mysql.png" alt="Logo MySQL" class="itLogos"
-                                    id="logoMySql">
-                                <p class="logoTexts" id="logoText12"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-postgresql.png" alt="Logo PostgreSQL" class="itLogos"
-                                    id="logoPostgreSql">
-                                <p class="logoTexts" id="logoText13"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-mongodb.jpg" alt="Logo MongoDB" class="itLogos"
-                                    id="logoMongoDb">
-                                <p class="logoTexts" id="logoText14"></p>
-                            </div>
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-excel.png" alt="Logo Excel" class="itLogos"
+                                 id="logoExcel">
+                            <p class="logoTexts" id="logoText4"></p>
                         </div>
 
-                        <div class="d-flex flex-row flex-wrap justify-content-center">
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-excel.png" alt="Logo Excel" class="itLogos"
-                                    id="logoExcel">
-                                <p class="logoTexts" id="logoText15"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-word.png" alt="Logo Word" class="itLogos" id="logoWord">
-                                <p class="logoTexts" id="logoText16"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-powerpoint.png" alt="Logo Powerpoint" class="itLogos"
-                                    id="logoPpt">
-                                <p class="logoTexts" id="logoText17"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-publisher.png" alt="Logo Publisher" class="itLogos"
-                                    id="logoPublisher">
-                                <p class="logoTexts" id="logoText18"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-outlook.png" alt="Logo Outlook" class="itLogos"
-                                    id="logoOutlook">
-                                <p class="logoTexts" id="logoText19"></p>
-                            </div>
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-powerpoint.png" alt="Logo Powerpoint" class="itLogos"
+                                 id="logoPpt">
+                            <p class="logoTexts" id="logoText5"></p>
                         </div>
 
-                        <div class="d-flex flex-row flex-wrap justify-content-center">
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-gimp.png" alt="Logo GIMP" class="itLogos" id="logoGimp">
-                                <p class="logoTexts" id="logoText20"></p>
-                            </div>
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-publisher.png" alt="Logo Publisher" class="itLogos"
+                                 id="logoPublisher">
+                            <p class="logoTexts" id="logoText6"></p>
+                        </div>
+                    </div>
 
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-powerlinkdirector.jpeg" alt="Logo Powerlink Director"
-                                    class="itLogos" id="logoPld">
-                                <p class="logoTexts" id="logoText21"></p>
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center text-center">
-                                <img src="../media/logos/logo-indesign.jpg" alt="Logo InDesign" class="itLogos"
-                                    id="logoInDesign">
-                                <p class="logoTexts" id="logoText22"></p>
-                            </div>
+                    <b>Technos web :</b>
+                    <div class="d-flex flex-row flex-wrap justify-content-center">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-html.png" alt="Logo HTML" class="itLogos" id="logoHtml">
+                            <p class="logoTexts" id="logoText7"></p>
                         </div>
 
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-css.png" alt="Logo CSS" class="itLogos" id="logoCss">
+                            <p class="logoTexts" id="logoText8"></p>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-js.png" alt="Logo Javascript" class="itLogos" id="logoJs">
+                            <p class="logoTexts" id="logoText9"></p>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-php.png" alt="Logo PHP" class="itLogos" id="logoPhp">
+                            <p class="logoTexts" id="logoText10"></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row flex-wrap justify-content-center">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-symfony.jpg" alt="Logo Symfony" class="itLogos"
+                                 id="logoSymfony">
+                            <p class="logoTexts" id="logoText11"></p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-reactjs.png" alt="Logo ReactJS" class="itLogos"
+                                 id="logoReactJs">
+                            <p class="logoTexts" id="logoText12"></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row flex-wrap justify-content-center">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-intellij.png" alt="Logo IntelliJ" class="itLogos"
+                                 id="logoIntellij">
+                            <p class="logoTexts" id="logoText13"></p>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-phpstorm.png" alt="Logo PHPStorm" class="itLogos"
+                                 id="logoPhpstorm">
+                            <p class="logoTexts" id="logoText14"></p>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-webstorm.png" alt="Logo Webstorm" class="itLogos"
+                                 id="logoWebstorm">
+                            <p class="logoTexts" id="logoText15"></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row flex-wrap justify-content-center mb-3">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-mysql.png" alt="Logo MySQL" class="itLogos"
+                                 id="logoMySql">
+                            <p class="logoTexts" id="logoText16"></p>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-postgresql.png" alt="Logo PostgreSQL" class="itLogos"
+                                 id="logoPostgreSql">
+                            <p class="logoTexts" id="logoText17"></p>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../media/logos/logo-mongodb.jpg" alt="Logo MongoDB" class="itLogos"
+                                 id="logoMongoDb">
+                            <p class="logoTexts" id="logoText18"></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row flex-wrap justify-content-center mb-3">
                         <div class="row">
-                            <b>Conception :</b>
+                            <b>Conception web :</b>
                             <p>Méthodologie AGILE & SCRUM, maquettage du site, rédaction cahier des charges, MCD / MLD
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex align-items-end">
-                <img id="avatarImage" src="../media/avatar-moi.png" class="mb-5" alt="Avatar moi">
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- trainings -->
+<div id="trainingsDiv" class="homepagePresentationDiv">
+    <div class="divTitles">
+        <h2>Formations</h2>
+    </div>
+
+    <!-- trainings -->
+    <div class="genDivFlex col-reverse">
+
+        <!-- Card for English degree -->
+        <div id="cardFive" class="card formationsDiv cardHeight">
+            <div class="card-header heightMin d-flex flex-column justify-content-between" id="headingFive">
+                <p>2015</p>
+                <h4>Licence Langues, Littératures & Civilisations étrangères (ANGLAIS)</h4>
+                <small>Université d'Artois, Arras</small>
+                <button class="btn btn-dark btn-block mt-3" data-toggle="collapse" data-target="#collapseFive"
+                        aria-expanded="false" aria-controls="collapseFive">
+                    Voir +
+                </button>
             </div>
-            <div class="competencesDiv">
-                <h3>Communication</h3>
-                <div id="communicationDiv" class="mt-5 px-3 text-left">
-                    <div class="d-flex justify-content-start align-items-center">
-                        <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
-                        <p class="ml-2 my-4">Conception de supports de communication</p>
-                    </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#cardFive">
+                <div class="card-body">
+                    <div class="voirPlus">
+                        <p>
+                            Focus sur l’anglais et la culture anglaise. Quasi-totalité des cours dispensés en
+                            anglais :
+                            histoire (UK/US), littérature (UK/US), traduction (thème/version). Cours de
+                            communication,
+                            phonétique anglais, théâtre…
 
-                    <div class="d-flex justify-content-start align-items-center">
-                        <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
-                        <p class="ml-2 my-4">Suivi de charte graphique</p>
+                        </p>
                     </div>
-
-                    <div class="d-flex justify-content-start align-items-center">
-                        <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
-                        <p class="ml-2 my-4">Gestion évènementielle</p>
-                    </div>
-
-                    <div class="d-flex justify-content-start align-items-center">
-                        <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
-                        <p class="ml-2 my-4">Bonne qualité rédactionnelle online & offline</p>
-                    </div>
-
-                    <div class="d-flex justify-content-start align-items-center">
-                        <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
-                        <p class="ml-2 my-4">Maîtrise des logiciels de conception numérique (rédaction,
-                            photos/vidéos...)</p>
-                    </div>
-
-                    <div class="d-flex justify-content-start align-items-center">
-                        <img src="../media/tick.png" style="height: 30px; width: auto;" alt="tick on in a square">
-                        <p class="ml-2 my-4">Sens de l'écoute et adaptabilité</p>
+                    <div class="petitPlus">
+                        <p class="font-weight-bold text-center">
+                            Le + :
+                        </p>
+                        <p>
+                            Cette formation m’a permis d’être encore plus à l’aise avec l’anglais, de me
+                            perfectionner, d’en apprendre plus sur la culture anglaise en général.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="competencesDiv" style="width: 42%;">
-                <h3>Intérêts et valeurs</h3>
+        </div>
+
+        <!-- Card for 1st year of master Languages & technologies -->
+        <div id="cardFour" class="card formationsDiv cardHeight">
+            <div class="card-header heightMin d-flex flex-column justify-content-between" id="headingFour">
+                <p>2017</p>
+                <h4>Master 1 - Langues & Technologies</h4>
+                <small>ULCO, Boulogne-sur-mer</small>
+                <button class="btn btn-dark btn-block mt-3" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                    Voir +
+                </button>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#cardFour">
+                <div class="card-body">
+                    <div class="voirPlus">
+                        <p>
+                            Pour les langues : Anglais & Espagnol au même niveau. Cours de traduction
+                            (thème/version),
+                            pratique à l’oral,
+                            Pour la partie technologie : cours d’informatique, utilisation de différents programmes
+                            (Suite office, InDesign…), culture générale / culture scientifique et technologique
+                            Cours de communication interculturelle et internationale des entreprises.
+
+                        </p>
+                    </div>
+                    <div class="petitPlus">
+                        <p class="font-weight-bold text-center">
+                            Le + :
+                        </p>
+                        <p>
+                            Pouvoir renouer avec l’espagnol que je n’avais pas étudié pendant ma licence et
+                            perfectionnement en anglais, apport culturel sur la technologie dans son ensemble et
+                            sensibilisation à la communication internationale.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Card for Prequal. to digital jobs training -->
+        <div id="cardThree" class="card formationsDiv cardHeight">
+            <div class="card-header heightMin d-flex flex-column justify-content-between" id="headingThree">
+                <p>2019</p>
+                <h4>Préqualifications aux métiers du numérique</h4>
+                <small>AFPA, Liévin</small>
+                <button class="btn btn-dark btn-block mt-3" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                    Voir +
+                </button>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#cardThree">
+                <div class="card-body">
+                    <div class="voirPlus">
+                        <p>
+                            Formation courte (3 mois) et non diplômante mais qui m’a permis de découvrir un peu plus
+                            les
+                            métiers du numériques et m’a aidé à faire mon choix en conséquence. Trois grands pôles
+                            étudiés : Développement, TAI & Graphisme.
+
+                        </p>
+                    </div>
+                    <div class="petitPlus">
+                        <p class="font-weight-bold text-center">
+                            Le + :
+                        </p>
+                        <p>
+                            Une assez grande liberté dans sa manière d’apprendre, activités variées, conseils avisés
+                            et aspect « touche à tout » très agréable pour vraiment permettre de découvrir
+                            différents métiers et leurs tâches respectives de façon plus concrète.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Card for Web & Mobile Web Dev training -->
+        <div id="cardTwo" class="card formationsDiv cardHeight">
+            <div class="card-header heightMin d-flex flex-column justify-content-between" id="headingTwo">
+                <p>2020</p>
+                <h4>Titre de Développeur Web & Web Mobile</h4>
+                <small>AFPA, Liévin</small>
+                <button class="btn btn-dark btn-block mt-3" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                    Voir +
+                </button>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#cardTwo">
+                <div class="card-body">
+                    <div class="voirPlus">
+                        <p>
+                            Formation diplômante (bac + 2). Algorithmie et logique, apprentissage de différents
+                            langages
+                            (HTML, JS, PHP…) et utilisation de frameworks, intérêt particulier porté au responsive
+                            design pour le front et à la sécurité pour le back.
+                        </p>
+                    </div>
+                    <div class="petitPlus">
+                        <p class="font-weight-bold text-center">
+                            Le + :
+                        </p>
+                        <p>
+                            Pouvoir travailler sur différents projets en solo ou en groupe, formation plutôt
+                            complète de l’algorithmie jusqu’à la réalisation complète d’une application (front/back)
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Card for App Conceptor & Dev training -->
+        <div id="cardOne" class="card formationsDiv cardHeight">
+            <div class="card-header heightMin d-flex flex-column justify-content-between" id="headingOne">
+                <p>2021</p>
+                <h4>Titre de Concepteur & Développeur d'applications</h4>
+                <small>AFPA, Arras</small>
+                <button class="btn btn-dark btn-block mt-3" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">
+                    Voir +
+                </button>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#cardOne">
+                <div class="card-body">
+                    <div class="voirPlus">
+                        <p>
+                            Formation diplômante (bac +3/+ 4). Grosses révisions des bases (Algorithmie, HTML, …).
+                            Puis
+                            apprentissage de langages informatiques, notamment JAVA, avec configuration du serveur
+                            etc.
+                            et des framework comme ReactJS. Utilisation de différentes bases de données
+                            (relationnelles
+                            ou non) comme PostgreSQL, MongoDB…
+                        </p>
+                    </div>
+                    <div class="petitPlus">
+                        <p class="font-weight-bold text-center">
+                            Le + :
+                        </p>
+                        <p>
+                            Pouvoir voir un peu plus en détail la partie conception d’un projet avec création de
+                            MCD, MLD etc., pouvoir profiter du travail en groupe pour aller plus loin encore,
+                            pouvoir
+                            travailler sur des projets différents et découvrir de nouvelles technos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- experiences -->
+<div id="experiencesDiv" class="homepagePresentationDiv">
+    <div class="divTitles">
+        <h2>Mes expériences professionnelles</h2>
+        <p class="w-75 my-4 mx-auto">Mes expériences professionnelles m'ont permis d'acquérir des connaissances diverses variées en communication et dans le domaine du digital dans son ensemble, mais aussi d'autres savoirs comme la pédagogie et l'adaptabilité à des projets divers et à différents publics.</p>
+    </div>
+
+    <div class="genDivFlex col-not-reverse">
+        <div class="experiencesTitleDiv">
+            <h3>COMMUNICATION & NUMÉRIQUE</h3>
+            <img src="../media/pictures/experiences-communication.jpg"
+                 alt="Gros plan sur une table de travail lors d'une réunion avec de carnets, crayons, ordinateurs et tasses.">
+        </div>
+        <div class="experiencesTextDiv">
+            <h3>2018 - Assistante de gestion culturelle</h3>
+            <h4>Abbaye de Belval, Troisvaux (62)</h4>
+            <p>Gestion des visites guidées en français et en anglais, organisation d’événement, travail sur la
+                communication (création d’affiches et de flyers).</p>
+            <hr>
+            <h3>2017 - Stage Service Finance</h3>
+            <h4>Herta, Saint Pol sur ternoise (62)</h4>
+            <p>Communication interne avec traduction d’un audit (anglais vers français), analyse et
+                traitement de données.</p>
+        </div>
+    </div>
+
+    <div class="genDivFlex col-reverse">
+        <div class="experiencesTextDiv">
+            <h3>2021 – Stage en Conception & Développement</h3>
+            <h4>Symfony 5, EasyAdmin3, Webpack, JS/Jquery</h4>
+            <p>Site vitrine pour l'institut de beauté 'Belle au Naturel' de Pernes.</p>
+            <hr>
+            <h3>2021 – Projet de gestion de bibliothèques</h3>
+            <h4>ReactJS, JAVA, MongoDB</h4>
+            <p>Plateforme pour que des adhérents puissent réserver des livres. Une partie admin pour que les
+                bibliothèques puissent gérer leurs stocks de livres, leurs adhérents et les prêts. Un partie super
+                admin pour la gestion des bibliothèques.</p>
+            <hr>
+            <h3>2020 - Stage en Développement Web</h3>
+            <h4>Symfony/PHP</h4>
+            <p>Application pour envoyer des mails et/ou SMS pour, entre autres, alerter les habitants de travaux
+                autour de chez eux.</p>
+        </div>
+        <div class="experiencesTitleDiv">
+            <h3>CONCEPTION & DEVELOPPEMENT</h3>
+            <img src="../media/pictures/experiences-code.jpg"
+                 alt="Écran d'ordinateur avec des lignes de code de type HTML.">
+        </div>
+    </div>
+
+    <div class="genDivFlex col-not-reverse col-xl-reverse">
+        <div class="experiencesTitleDiv">
+            <h3>EN ANGLETERRE</h3>
+            <img src="../media/pictures/experiences-angleterre.jpg"
+                 alt="paysage de Londres.">
+        </div>
+        <div class="experiencesTextDiv">
+            <h3>2015-2016 - Assistante de professeurs de français en Angleterre</h3>
+            <h4>Différentes écoles, Leicester (UK)</h4>
+            <p>Pratique du français à l’oral et parfois à l’écrit. Préparation aux examens ou à des concours.</p>
+            <hr>
+            <h3>2015 - Stage RH</h3>
+            <h4>Rowntree, York (UK)</h4>
+            <p>Participation à la communication (création d’affiches sur la santé, etc.) et à l’optimisation du
+                système d’embauche.</p>
+        </div>
+    </div>
+
+    <div class="genDivFlex col-reverse col-xl-reverse">
+        <div class="experiencesTextDiv">
+            <h3>2019-2020 - Professeure particulière</h3>
+            <h4>Anacours</h4>
+            <p>Aide aux devoirs, création d’activités d’apprentissage ludiques.</p>
+            <hr>
+            <h3>2019 - Assistante d'éducation</h3>
+            <h4>Lycée Pierre Mendes France, Saint Pol sur ternoise (62)</h4>
+            <p>Gestion des pointages, surveillance, accompagnement.</p>
+            <hr>
+            <h3>2015 - Stage d'observation en Lycée (cours d'anglais)</h3>
+            <h4>Lycée Albert Chatelet, Saint Pol sur ternoise (62)</h4>
+            <p>Observation de l’apprentissage de l’anglais à différents niveaux et dans différentes filières.</p>
+        </div>
+        <div class="experiencesTitleDiv">
+            <h3>EDUCATION & PÉDAGOGIE</h3>
+            <img src="../media/pictures/experiences-pedagogie.jpg"
+                 alt="Des livres dont un ouvert sur une table en bois avec des lunettes et une horloge.">
+        </div>
+    </div>
+
+
+</div>
+
+<!-- competences -->
+<div id="achievementsDiv" class="homepagePresentationDiv">
+    <div class="divTitles">
+        <h2>Mes réalisations</h2>
+        <p class="w-75 my-4 mx-auto">Voici quelques exemples de mes créations numériques : créations d'affiches et de flyers, retouche photo, dessin...</p>
+    </div>
+
+
+    <div class="genDivFlex col-not-reverse">
+        <div class="realisationMultimedia">
+            <h3>Affiches / Flyers / Logo</h3>
+            <div class="realisationImg">
+                <img src="../media/realisation/affiche1.png" alt="Affiche pour lutter contre la maladie d'Alzheimer">
+                <img src="../media/realisation/affiche2.png" alt="Affiche pour lutter contre les violences conjugales">
+                <img src="../media/realisation/affiche3.png" alt="Affiche pour lutter contre le cancer du sein">
+                <img src="../media/realisation/logo-ludibar.jpg" alt="Logo pour un bar éco citoyen, ludique et solidaire">
+                <img src="../media/realisation/flyer-page1.jpg" alt="Flyer pour événément à l'Abbaye de Belval - Partie 1">
+                <img src="../media/realisation/flyer-page2.jpg" alt="Flyer pour événément à l'Abbaye de Belval - Partie 2">
+
+            </div>
+        </div>
+        <div class="realisationMultimedia">
+            <h3>Dessins & Créations graphiques</h3>
+            <div class="realisationImg">
+                <img src="../media/realisation/montage-linkedin.png" alt="Montage moi assise en train de regarder sur LinkedIn">
+                <img src="../media/realisation/dessin-famille.png" alt="Dessin d'une famille de dos">
+                <img src="../media/realisation/avatarmaker.PNG" alt="Avatar de moi-même en partant d'une photo">
+
+                <img src="../media/realisation/wolf.png" alt="Dessin de loup">
+                <img src="../media/realisation/montage-lettre.png" alt="Montage moi avec la lettre N">
+                <img src="../media/realisation/fox.png" alt="Dessin de renard">
+            </div>
+        </div>
+        <!--        <div class="realisationMultimedia">-->
+        <!--            <h3>Vidéos</h3>-->
+        <!--            <p></p>-->
+        <!--        </div>-->
+        <div class="realisationMultimedia">
+            <h3>Sites</h3>
+            <div id="sites">
+                <p>- Mon cv en ligne (code à retrouver sur mon profil <a href="https://github.com/Noemie123/cv-noemie-hoffmann" target="_blank">github</a>)</p>
+                <p>- Site vitrine pour l'institut de beauté Belle au Naturel à Pernes (à venir)</p>
+                <a href="">
+                    <img src="../media/logos/Belle-au-naturel-logo.jpg" alt="logo Belle Au Naturel">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- personal -->
+<div id="personalDiv" class="homepagePresentationDiv">
+    <div class="divTitles">
+        <h2>Infos persos</h2>
+    </div>
+
+    <div class="genDivFlex col-not-reverse" style="align-items: center;">
+        <div id="idCard" class="profileLeftDiv">
+            <img class="ml-md-3 mt-2 mt-md-0" src="../media/profil.jpg" alt="Photo de profil">
+            <div>
+                <h3 class="my-3">Noémie HOFFMANN</h3>
+                <ul>
+                    <li>27 ans</li>
+                    <li>Croix en ternois</li>
+                    <li>noemie.hof94@gmail.com</li>
+                </ul>
+                <div class="row py-0 logoIdCard">
+                    <a href="https://www.linkedin.com/in/noemie-hoffmann-nh123/" target="_blank"><img
+                            src="../media/logos/logo-linkedIn-small.png"
+                            alt="Logo LinkedIn"></a>
+                    <p class="m-0">/noemie-hoffmann-nh123</p>
+                </div>
+                <div class="row py-0 logoIdCard">
+                    <a href="https://github.com/Noemie123" target="_blank"><img
+                                                                                src="../media/logos/logo-github.png" alt="Logo Github"></a>
+                    <p class="m-0">/Noemie123</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRightDiv py-4">
+            <p class="text-justify px-3">
+                Alors, parlons un peu langues étrangères…
+            </p>
+            <p class="text-justify px-3">
+                I am very fluent in English now, thanks to learning it at school obviously but also through personal
+                work. I passed a degree in English Languages, Literatures and Civilisations in 2015. I worked in
+                England for a year after that, as an intern working with Human Resources in a factory and then for a
+                whole school year as a French assistant. I always loved English and England in general to be honest
+                and I am lucky enough to travel to the UK quite often.
+            </p>
+            <p class="text-justify px-3">
+                Hablo un poquito español, pero entiendo mucho más que hablo. Estudié al español cuando fui a la
+                escuela y por un ano cuando fui a la universidad. Pero no practico y entonces mi nivel actualmente
+                podria ser mejor. Pero entiendo cuando leo y escucho and voy a practicar para hablarlo. Me gustaría
+                volver a España porque disfruté mucho Barcelona.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="genDivFlex col-not-reverse" style="align-items: center;">
+        <div class="profileLeftDiv d-flex justify-content-center align-items-center">
+            <div class="w-sd-100 w-md-50 text-center">
+                <h3>Mes atouts</h3>
+
                 <div id="interestsValuesDiv">
                     <p class="font-weight-bold">esprit d'équipe</p>
                     <p class="font-italic">curiosité</p>
-                    <p class="text-uppercase">ouverture d'esprit</p>
-                    <p class="font-weight-bold" style="color: #C66B3D">créativité</p>
+                    <p class="text-uppercase popAsset">ouverture d'esprit</p>
+                    <p class="font-weight-bold popAsset">créativité</p>
                     <p>communication</p>
                     <p class="font-weight-bold">graphisme</p>
                     <p>digital</p>
                     <p class="text-uppercase">organisation</p>
                     <p>progrès</p>
-                    <p class="font-weight-bold" style="color: #C66B3D">numérique</p>
+                    <p class="font-weight-bold popAsset" >numérique</p>
                     <p class="font-weight-bold">création</p>
                     <p class="font-italic">planification</p>
-                    <p class="font-weight-bold" style="color: #C66B3D">anglais</p>
+                    <p class="font-weight-bold popAsset">anglais</p>
                     <p>apprentissage</p>
                     <p class="text-uppercase">adaptabilité</p>
                 </div>
             </div>
-
         </div>
-
-        <!-- trainings -->
-        <div class="genDivFlex col-not-reverse">
-
-            <!-- Card for App Conceptor & Dev training -->
-            <div id="cardOne" class="card formationsDiv cardHeight">
-                <div class="card-header heightMin d-flex flex-column justify-content-between" id="headingOne">
-                    <p>2021</p>
-                    <h4>Titre de Concepteur & Développeur d'applications</h4>
-                    <small>AFPA, Arras</small>
-                    <button class="btn btn-dark btn-block mt-3" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="false" aria-controls="collapseOne">
-                        Voir +
-                    </button>
-                </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#cardOne">
-                    <div class="card-body">
-                        <div class="voirPlus">
-                            <p>
-                                Formation diplômante (bac +3/+ 4). Grosses révisions des bases (Algorithmie, HTML, …).
-                                Puis
-                                apprentissage de langages informatiques, notamment JAVA, avec configuration du serveur
-                                etc.
-                                et des framework comme ReactJS. Utilisation de différentes bases de données
-                                (relationnelles
-                                ou non) comme PostgreSQL, MongoDB…
-                            </p>
-                        </div>
-                        <div class="petitPlus">
-                            <p class="font-weight-bold text-center">
-                                Le + :
-                            </p>
-                            <p>
-                                Pouvoir voir un peu plus en détail la partie conception d’un projet avec création de
-                                MCD, MLD etc., pouvoir profiter du travail en groupe pour aller plus loin encore,
-                                pouvoir
-                                travailler sur des projets différents et découvrir de nouvelles technos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="profileRightDiv">
+            <div class="w-sd-100 w-md-50 text-center">
+                <h3>Mes hobbies</h3>
+                <p>Cruciverbiste aguerrie - Dessinatrice et Voyageuse en dilettante</p>
             </div>
-
-            <!-- Card for Web & Mobile Web Dev training -->
-            <div id="cardTwo" class="card formationsDiv cardHeight">
-                <div class="card-header heightMin d-flex flex-column justify-content-between" id="headingTwo">
-                    <p>2020</p>
-                    <h4>Titre de Développeur Web & Web Mobile</h4>
-                    <small>AFPA, Liévin</small>
-                    <button class="btn btn-dark btn-block mt-3" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="false" aria-controls="collapseTwo">
-                        Voir +
-                    </button>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#cardTwo">
-                    <div class="card-body">
-                        <div class="voirPlus">
-                            <p>
-                                Formation diplômante (bac + 2). Algorithmie et logique, apprentissage de différents
-                                langages
-                                (HTML, JS, PHP…) et utilisation de frameworks, intérêt particulier porté au responsive
-                                design pour le front et à la sécurité pour le back.
-                            </p>
-                        </div>
-                        <div class="petitPlus">
-                            <p class="font-weight-bold text-center">
-                                Le + :
-                            </p>
-                            <p>
-                                Pouvoir travailler sur différents projets en solo ou en groupe, formation plutôt
-                                complète de l’algorithmie jusqu’à la réalisation complète d’une application (front/back)
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card for Prequal. to digital jobs training -->
-            <div id="cardThree" class="card formationsDiv cardHeight">
-                <div class="card-header heightMin d-flex flex-column justify-content-between" id="headingThree">
-                    <p>2019</p>
-                    <h4>Préqualifications aux métiers du numérique</h4>
-                    <small>AFPA, Liévin</small>
-                    <button class="btn btn-dark btn-block mt-3" data-toggle="collapse" data-target="#collapseThree"
-                        aria-expanded="false" aria-controls="collapseThree">
-                        Voir +
-                    </button>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#cardThree">
-                    <div class="card-body">
-                        <div class="voirPlus">
-                            <p>
-                                Formation courte (3 mois) et non diplômante mais qui m’a permis de découvrir un peu plus
-                                les
-                                métiers du numériques et m’a aidé à faire mon choix en conséquence. Trois grands pôles
-                                étudiés : Développement, TAI & Graphisme.
-
-                            </p>
-                        </div>
-                        <div class="petitPlus">
-                            <p class="font-weight-bold text-center">
-                                Le + :
-                            </p>
-                            <p>
-                                Une assez grande liberté dans sa manière d’apprendre, activités variées, conseils avisés
-                                et aspect « touche à tout » très agréable pour vraiment permettre de découvrir
-                                différents métiers et leurs tâches respectives de façon plus concrète.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card for 1st year of master Languages & technologies -->
-            <div id="cardFour" class="card formationsDiv cardHeight">
-                <div class="card-header heightMin d-flex flex-column justify-content-between" id="headingFour">
-                    <p>2017</p>
-                    <h4>Master 1 - Langues & Technologies</h4>
-                    <small>ULCO, Boulogne-sur-mer</small>
-                    <button class="btn btn-dark btn-block mt-3" data-toggle="collapse" data-target="#collapseFour"
-                        aria-expanded="false" aria-controls="collapseFour">
-                        Voir +
-                    </button>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#cardFour">
-                    <div class="card-body">
-                        <div class="voirPlus">
-                            <p>
-                                Pour les langues : Anglais & Espagnol au même niveau. Cours de traduction
-                                (thème/version),
-                                pratique à l’oral,
-                                Pour la partie technologie : cours d’informatique, utilisation de différents programmes
-                                (Suite office, InDesign…), culture générale / culture scientifique et technologique
-                                Cours de communication interculturelle et internationale des entreprises.
-
-                            </p>
-                        </div>
-                        <div class="petitPlus">
-                            <p class="font-weight-bold text-center">
-                                Le + :
-                            </p>
-                            <p>
-                                Pouvoir renouer avec l’espagnol que je n’avais pas étudié pendant ma licence et
-                                perfectionnement en anglais, apport culturel sur la technologie dans son ensemble et
-                                sensibilisation à la communication internationale.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card for English degree -->
-            <div id="cardFive" class="card formationsDiv cardHeight">
-                <div class="card-header heightMin d-flex flex-column justify-content-between" id="headingFive">
-                    <p>2015</p>
-                    <h4>Licence Langues, Littératures & Civilisations étrangères (ANGLAIS)</h4>
-                    <small>Université d'Artois, Arras</small>
-                    <button class="btn btn-dark btn-block mt-3" data-toggle="collapse" data-target="#collapseFive"
-                        aria-expanded="false" aria-controls="collapseFive">
-                        Voir +
-                    </button>
-                </div>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#cardFive">
-                    <div class="card-body">
-                        <div class="voirPlus">
-                            <p>
-                                Focus sur l’anglais et la culture anglaise. Quasi-totalité des cours dispensés en
-                                anglais :
-                                histoire (UK/US), littérature (UK/US), traduction (thème/version). Cours de
-                                communication,
-                                phonétique anglais, théâtre…
-
-                            </p>
-                        </div>
-                        <div class="petitPlus">
-                            <p class="font-weight-bold text-center">
-                                Le + :
-                            </p>
-                            <p>
-                                Cette formation m’a permis d’être encore plus à l’aise avec l’anglais, de me
-                                perfectionner, d’en apprendre plus sur la culture anglaise en général.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- experiences -->
-    <div id="experiencesDiv" class="homepagePresentationDiv">
-        <div class="divTitles">
-            <h2>Mes expériences professionnelles</h2>
-        </div>
-
-        <div class="genDivFlex col-not-reverse">
-            <div class="experiencesTitleDiv">
-                <h3>CONCEPTION & DEVELOPPEMENT</h3>
-                <img src="../media/pictures/experiences-code.jpg"
-                    alt="Écran d'ordinateur avec des lignes de code de type HTML.">
-            </div>
-            <div class="experiencesTextDiv">
-                <h3>2021 – Stage en Conception & Développement</h3>
-                <h4>Symfony 5, EasyAdmin3, Webpack, JS/Jquery</h4>
-                <p>Site vitrine pour l'institut de beauté 'Belle au Naturel' de Pernes.</p>
-                <hr>
-                <h3>2021 – Projet de gestion de bibliothèques</h3>
-                <h4>ReactJS, JAVA, MongoDB</h4>
-                <p>Plateforme pour que des adhérents puissent réserver des livres. Une partie admin pour que les
-                    bibliothèques puissent gérer leurs stocks de livres, leurs adhérents et les prêts. Un partie super
-                    admin pour la gestion des bibliothèques.</p>
-                <hr>
-                <h3>2020 - Stage en Développement Web</h3>
-                <h4>Symfony/PHP</h4>
-                <p>Application pour envoyer des mails et/ou SMS pour, entre autres, alerter les habitants de travaux
-                    autour de chez eux.</p>
-            </div>
-        </div>
-
-        <div class="genDivFlex col-reverse col-xl-reverse">
-            <div class="experiencesTextDiv">
-                <h3>2019-2020 - Professeure particulière</h3>
-                <h4>Anacours</h4>
-                <p>Aide aux devoirs, création d’activités d’apprentissage ludiques.</p>
-                <hr>
-                <h3>2015-2016 - Assistante de professeurs de français en Angleterre</h3>
-                <h4>Différentes écoles, Leicester (UK)</h4>
-                <p>Pratique du français à l’oral et parfois à l’écrit. Préparation aux examens ou à des concours.</p>
-                <hr>
-                <h3>2015 - Stage d'observation en Lycée (cours d'anglais)</h3>
-                <h4>Lycée Albert Chatelet, Saint Pol sur ternoise (62)</h4>
-                <p>Observation de l’apprentissage de l’anglais à différents niveaux et dans différentes filières.</p>
-
-            </div>
-            <div class="experiencesTitleDiv">
-                <h3>ÉDUCATION</h3>
-                <img src="../media/pictures/experiences-education.jpg"
-                    alt="Des livres dont un ouvert sur une table en bois avec des lunettes et une horloge.">
-            </div>
-        </div>
-
-        <div class="genDivFlex col-not-reverse">
-            <div class="experiencesTitleDiv">
-                <h3>COMMUNICATION</h3>
-                <img src="../media/pictures/experiences-communication.jpg"
-                    alt="Gros plan sur une table de travail lors d'une réunion avec de carnets, crayons, ordinateurs et tasses.">
-            </div>
-            <div class="experiencesTextDiv">
-                <h3>2018 - Assistante de gestion culturelle</h3>
-                <h4>Abbaye de Belval, Troisvaux (62)</h4>
-                <p>Gestion des visites guidées en français et en anglais, organisation d’événement, travail sur la
-                    communication (création d’affiches et de flyers).</p>
-                <hr>
-                <h3>2017 - Stage Service Finance</h3>
-                <h4>Herta, Saint Pol sur ternoise (62)</h4>
-                <p>Traduction d’un audit de l’anglais au français pour une meilleure compréhension, analyse et
-                    traitement de données.</p>
-                <hr>
-                <h3>2015 - Stage RH</h3>
-                <h4>Rowntree, York (UK)</h4>
-                <p>Participation à la communication (création d’affiches sur la santé, etc.) et à l’optimisation du
-                    système d’embauche.</p>
+            <div id="imgHobbies" class="displayNone text-center mb-5">
+                <img src="../media/pictures/hobbies.png" alt="hobbies">
             </div>
         </div>
     </div>
+</div>
 
-    <!-- personal -->
-    <div id="personalDiv" class="homepagePresentationDiv">
-        <div class="divTitles">
-            <h2>Infos persos</h2>
-        </div>
-
-        <div class="genDivFlex col-not-reverse" style="align-items: center;">
-            <div id="profileLeftDiv">
-                <img class="ml-md-3 mt-2 mt-md-0" src="../media/profil.jpg" alt="Photo de profil">
-                <div>
-                    <h3 class="my-3">Noémie Hoffmann</h3>
-                    <ul>
-                        <li>26 ans</li>
-                        <li>Croix en ternois</li>
-                        <li>noemie.hof94@gmail.com</li>
-                    </ul>
-                    <div class="row py-0">
-                        <a href="https://www.linkedin.com/in/noemie-hoffmann-nh123/" target="_blank"><img
-                                style="height: 40px;" src="../media/logos/logo-linkedIn-small.png"
-                                alt="Logo LinkedIn"></a>
-                        <p class="m-0">/noemie-hoffmann-nh123</p>
-                    </div>
-                    <div class="row py-0">
-                        <a href="https://github.com/Noemie123" target="_blank"><img style="height: 40px"
-                                src="../media/logos/logo-github.png" alt="Logo Github"></a>
-                        <p class="m-0">/Noemie123</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="profileRightDiv" class="py-4">
-                <p class="text-justify px-3">
-                    Alors, parlons un peu langues étrangères…
-                </p>
-                <p class="text-justify px-3">
-                    I am very fluent in English now, thanks to learning it at school obviously but also through personal
-                    work. I passed a degree in English Languages, Literatures and Civilisations in 2015. I worked in
-                    England for a year after that, as an intern working with Human Resources in a factory and then for a
-                    whole school year as a French assistant. I always loved English and England in general to be honest
-                    and I am lucky enough to travel to the UK quite often.
-                </p>
-                <p class="text-justify px-3">
-                    Hablo un poquito español, pero entiendo mucho más que hablo. Estudié al español cuando fui a la
-                    escuela y por un ano cuando fui a la universidad. Pero no practico y entonces mi nivel actualmente
-                    podria ser mejor. Pero entiendo cuando leo y escucho and voy a practicar para hablarlo. Me gustaría
-                    volver a España porque disfruté mucho Barcelona.
-                </p>
-            </div>
-        </div>
-
-        <div id="profileBottomDiv">
-            <div id="profileCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#profileCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#profileCarousel" data-slide-to="1"></li>
-                    <li data-target="#profileCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="../media/pictures/slider-voyages.PNG" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="../media/pictures/slider-dessins.PNG" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="../media/pictures/slider-creations-graphiques.PNG"
-                            alt="Third slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#profileCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Précédent</span>
-                </a>
-                <a class="carousel-control-next" href="#profileCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Suivant</span>
-                </a>
-            </div>
-
-            <!-- say what I like -->
-            <div class="d-flex justify-content-center">
-                <div class="w-sd-100 w-md-50">
-                    <div class="text-center">
-                        <h3>Mes hobbies</h3>
-                    </div>
-                    <ul>
-                        <li>Les voyages (Europe et surtout l’Angleterre)</li>
-                        <li>Dessins & créations graphiques</li>
-                        <li>Jeux de société</li>
-                    </ul>
-                </div>
-            </div>
-
-
-        </div>
+<footer>
+    <div class="w-75 mx-auto text-center mb-3">
+        <p>Contactez-moi sur <a href="https://www.linkedin.com/in/noemie-hoffmann-nh123/" target="_blank">LinkedIn</a> ou par mail : noemie.hof94@gmail.com :)</p>
     </div>
+</footer>
 
-    <footer class="d-flex flex-column">
-        <div class="w-75 mx-auto text-justify mb-3">
-            <p>Thanks for coming on this website, I hope you liked it as much as I enjoyed making it. Feel free to share
-                it around and maybe help me find a job in the process ? If you're thinking of a great addition or
-                update that would make it a little bit better, please feel free to share with me as well. Feedback is
-                always nice to receive. Have a great day ! x</p>
-        </div>
-        <div class="d-flex w-75 mx-auto justify-content-center align-items-center">
-            <p class="mr-3 mb-0">Checked by using W3S Html validator with no erros or warnings to show </p>
-            <img src="../media/tick-white.png" style="height: 25px; width: auto;" alt="tick on in a square">
-        </div>
-    </footer>
+<!-- arrow to go to top -->
+<div onclick="topFunction()" id="goToTopBtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
 
-    <!-- arrow to go to top -->
-    <div onclick="topFunction()" id="goToTopBtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-    <script src="../libs/js/scroll.js"></script>
-    <script src="../libs/js/togglingCards.js"></script>
-    <script src="../libs/js/hoverNamesTechnos.js"></script>
-    <script src="../libs/js/copyEmail.js"></script>
+<script src="../libs/js/scroll.js"></script>
+<script src="../libs/js/togglingCards.js"></script>
+<script src="../libs/js/hoverNamesTechnos.js"></script>
+<script src="../libs/js/copyEmail.js"></script>
 </body>
 
 </html>

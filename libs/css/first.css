@@ -38,7 +38,7 @@ body, html {
     left: 30%;
     height: 150px;
     width: 40%;
-    background-color: #C66B3D;
+    background-color: #D97979;
     color: #E5E5DC;
     opacity: 0.8;
     display: flex;
@@ -51,7 +51,7 @@ body, html {
 @media all and (max-width: 1400px) { 
     #goToResumeDiv {
         text-align: center;
-        height: 250px;
+        height: 350px;
         top: 100px;
         left: 15%;
         width: 70%;
